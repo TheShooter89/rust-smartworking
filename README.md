@@ -1,16 +1,14 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
 
-# cluexis-web
+# rust-smarworking
 
-a simple data-analysis tool for exported Telegram chats, written in Rust and accessible via a web UI in a browser
+a simple airshipment management tool, written in Rust and accessible via a web UI in a browser
 
 ### What the heck is it?
 
-`cluexis-web` is a small tool written in Rust that aims to provide insights and deep statistics from Telegram chats.
+`rust-smarworking` is a small tool written in Rust that aims to help track and manage air shipments handled by an Operational Air Export department
 
-Leveraging data exported from the (desktop only?) Telegram client app in JSON format this crate stores chats data into a `sqlite` database and performs a plethora of statistical and comparison analysis.
-
-`cluexis-web` starts a simple local server that exposes a web UI accessible via browser
+`rust-smarworking` starts a simple local server that exposes a web UI accessible via browser
 
 
 ## Usage/Examples
@@ -52,15 +50,15 @@ written with rusty 💛️💙️ by Tanque
 - [@TheShooter89](https://www.github.com/TheShooter89)
 
 
-## `cluexis-web` Stands With Ukraine 🇺🇦️
+## `rust-smarworking` Stands With Ukraine 🇺🇦️
 
     "Freedom doesn't come cheap"
 
-`cluexis-web` stands with people of Ukraine in their fight against the brutal russian aggression and unrightful occupation of their homeland
+`rust-smarworking` stands with people of Ukraine in their fight against the brutal russian aggression and unrightful occupation of their homeland
 
-`cluexis-web` stands with people of Ukraine in their fight for **Freedom**, for **Peace**, for **Self-Determination**, for **Happiness**
+`rust-smarworking` stands with people of Ukraine in their fight for **Freedom**, for **Peace**, for **Self-Determination**, for **Happiness**
 
-`cluexis-web` stands with this generation of young ukrainians robbed away of their youth by the war, who will have to find the strength to get up once again and rebuild from the rubbles
+`rust-smarworking` stands with this generation of young ukrainians robbed away of their youth by the war, who will have to find the strength to get up once again and rebuild from the rubbles
 
 ####
 
