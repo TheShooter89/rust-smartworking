@@ -1,5 +1,9 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
 
+<p align="center">
+	<img src="/static/img/rsw_logo.png" alt="rust-smatrworking logo" style="height: 256px; width: 256px;" />
+</p>
+
 # rust-smarworking
 
 a simple airshipment management tool, written in Rust and accessible via a web UI in a browser
