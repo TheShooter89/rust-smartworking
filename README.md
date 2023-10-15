@@ -4,9 +4,13 @@
 	<img src="/static/img/rsw_logo.png" alt="rust-smatrworking logo" style="height: 256px; width: 256px;" />
 </p>
 
-# rust-smarworking
+<h1 align="center">
+	rust-smartworking
+</h1>
 
-a simple airshipment management tool, written in Rust and accessible via a web UI in a browser
+<p align="center">
+	a simple airshipment management tool, written in Rust and accessible via a web UI in a browser
+</p>
 
 ### What the heck is it?
 
