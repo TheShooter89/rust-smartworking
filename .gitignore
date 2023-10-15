@@ -9,7 +9,7 @@
 *.testing.*
 
 # github issue template folder
-/.github/ISSUE_TEMPLATE
+##/.github/ISSUE_TEMPLATE
 
 # typescript/node stuff
 node_modules/
