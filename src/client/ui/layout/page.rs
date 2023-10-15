@@ -4,7 +4,10 @@ use serde::{Deserialize, Serialize};
 
 use html_to_string_macro::html;
 
-use crate::client::ui::{Body, Component, Head};
+use crate::globals;
+
+use crate::client::ui::Component;
+use crate::client::ui::Layout::{Body, Head};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Page {}
@@ -13,7 +16,7 @@ impl Component for Page {
     fn render(&self) -> String {
         let start_raw = "<!DOCTYPE html>\n<html lang=en>";
         let end_raw = "\n</html>";
-        let head = Head::new("cluexis-web").render();
+        let head = Head::new(globals::APP_NAME).render();
         let body = Body::new().render();
 
         let result = start_raw.to_string() + head.as_str() + body.as_str() + end_raw;

@@ -14,6 +14,12 @@ use server::Server;
 
 fn app_info() {
     println!("#################################################################");
+    println!(
+        "   // {}  // ({})",
+        globals::APP_NAME.to_uppercase(),
+        globals::APP_VERSION.to_lowercase()
+    );
+    println!("#################################################################");
     println!("application host: {:?}", globals::HOST);
     println!("application port: {:?}", globals::PORT);
     println!("application data folder: {:?}", globals::APP_DATA_ROOT);

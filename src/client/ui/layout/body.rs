@@ -4,7 +4,8 @@ use serde::{Deserialize, Serialize};
 
 use html_to_string_macro::html;
 
-use crate::client::ui::{Component, Dashboard, Home, Navbar};
+use crate::client::ui::Layout::Navbar;
+use crate::client::ui::{Component, Dashboard};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Body {}

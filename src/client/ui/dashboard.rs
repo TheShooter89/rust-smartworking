@@ -6,6 +6,7 @@ use serde::{Deserialize, Serialize};
 
 use html_to_string_macro::html;
 
+use crate::client::ui::Layout::Children;
 use crate::client::ui::{
     ChatPanel, Component, StatisticsBox, StatisticsBoxData, StatisticsBoxDataGroup,
     StatisticsManager, TitleStrip,
@@ -46,6 +47,14 @@ impl Component for Dashboard {
             label: "MIN messages in a single day:".to_string(),
             value: "1(0.75)".to_string(),
         });
+
+        // TESTING
+        //let credits = TitleStrip::new().add("prova");
+        //let fake_stats = ChatPanel::new();
+        //let mut children = Vec::new();
+        //children.push(credits.clone());
+        //children.push(fake_stats);
+        //let children_render = Children::from_vec(Vec::new().push(credits).push(fake_stats));
 
         let result = html!(
             <section class="section p-4 cw-dashboard-container">

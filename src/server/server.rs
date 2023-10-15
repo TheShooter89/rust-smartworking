@@ -5,7 +5,8 @@ use html_to_string_macro::html;
 
 use crate::globals;
 
-use crate::client::ui::{Component, Head, Page};
+use crate::client::ui::Component;
+use crate::client::ui::Layout::{Head, Page};
 use crate::server::routes_setup;
 
 #[derive(Debug)]
