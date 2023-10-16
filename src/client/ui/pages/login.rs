@@ -54,7 +54,7 @@ fn login_card() -> String {
 
                     <div class="field">
                         <div class="control">
-                            <button class="button is-warning is-fullwidth">"SEND MAGIC LINK"</button>
+                            <button hx-post="/send_magic_link" class="button is-warning is-fullwidth">"SEND MAGIC LINK"</button>
                         </div>
                     </div>
                 </form>
