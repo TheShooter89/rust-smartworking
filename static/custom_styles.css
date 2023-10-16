@@ -1,31 +1,51 @@
+html {
+  overflow: hidden;
+}
 
 body {
   height: 100vh;
   overflow: hidden;
 }
 
-.cw-navbar {
+.rsw-navbar {
   background-color: #255C99;
 }
 
-.cw-navbar-apptitle {
+.rsw-navbar-apptitle {
   color: #FFD500
 }
 
-.cw-dashboard-container {
+.rsw-dashboard-container {
   height: 100%;
 }
 
-.cw-titlestrip {
+.rsw-titlestrip {
   /*background-color: #B3001B;*/
   background-color: #FFD500;
 }
 
-.cw-titlestrip-titles {
+.rsw-titlestrip-titles {
   color: white;
   text-shadow: 1px 1px 4px #7F7F7F;
 }
 
-.cw-statisticsmanager-nostats {
+.rsw-statisticsmanager-nostats {
   background-color: #F5F5F5;
+}
+
+.rsw-loginpage-section {
+  height: 100%;
+  /*overflow: auto;*/
+}
+
+.rsw-loginpage-section-background {
+  background-image: url("img/aircarrier.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rsw-loginpage-formbox-quote {
+  margin-top: 8%;
+  margin-bottom: 14% !important;
 }

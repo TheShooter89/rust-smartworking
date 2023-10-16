@@ -14,7 +14,7 @@ pub struct Navbar {}
 impl Component for Navbar {
     fn render(&self) -> String {
         let result = html!(
-            <nav class="navbar is-fixed-top cw-navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-fixed-top rsw-navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item">
                         <img src="static/img/rsw_logo.png" />
@@ -22,7 +22,7 @@ impl Component for Navbar {
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-start">
-                        <h1 class="subtitle navbar-item cw-navbar-apptitle">{globals::APP_NAME}</h1>
+                        <h1 class="subtitle navbar-item rsw-navbar-apptitle">{globals::APP_NAME}</h1>
                     </div>
 
                     <div class="navbar-end">

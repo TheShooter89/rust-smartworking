@@ -6,26 +6,30 @@ use html_to_string_macro::html;
 
 use crate::globals;
 
-use crate::client::ui::Component;
+use crate::client::ui::pages::{LoginPage, PageFrame};
 use crate::client::ui::Layout::{Body, Head};
+use crate::client::ui::{Component, Dashboard};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Page {}
+pub struct Page<T: Component> {
+    root: T,
+}
 
-impl Component for Page {
+impl<T: Component + Clone> Component for Page<T> {
     fn render(&self) -> String {
         let start_raw = "<!DOCTYPE html>\n<html lang=en>";
         let end_raw = "\n</html>";
         let head = Head::new(globals::APP_NAME).render();
-        let body = Body::new().render();
+        let content = PageFrame::new(self.root.clone());
+        let body = Body::new(content).render();
 
         let result = start_raw.to_string() + head.as_str() + body.as_str() + end_raw;
         result
     }
 }
 
-impl Page {
-    pub fn new() -> Self {
-        Page {}
+impl<T: Component> Page<T> {
+    pub fn new(root: T) -> Self {
+        Page { root }
     }
 }
