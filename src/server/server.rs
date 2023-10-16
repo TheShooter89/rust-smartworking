@@ -7,7 +7,7 @@ use crate::globals;
 
 use crate::client::ui::Component;
 use crate::client::ui::Layout::{Head, Page};
-use crate::server::routes_setup;
+use crate::server::{api_setup, routes_setup};
 
 #[derive(Debug)]
 pub struct Server {}
@@ -31,6 +31,7 @@ impl Server {
                         .use_last_modified(true),
                 )
                 .configure(routes_setup)
+                .configure(api_setup)
         })
         .bind((globals::HOST, globals::PORT))?
         .run()

@@ -7,6 +7,8 @@ mod statistics_box;
 mod statistics_manager;
 mod title_strip;
 
+pub mod pages;
+
 pub use chat_panel::ChatPanel;
 pub use component::Component;
 pub use dashboard::Dashboard;

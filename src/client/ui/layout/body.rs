@@ -4,18 +4,22 @@ use serde::{Deserialize, Serialize};
 
 use html_to_string_macro::html;
 
+//use crate::client::ui::pages::{LoginPage, PageFrame};
+use crate::client::ui::pages::{LoginPage, PageFrame};
 use crate::client::ui::Layout::Navbar;
 use crate::client::ui::{Component, Dashboard};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Body {}
+pub struct Body<T: Component> {
+    page: PageFrame<T>,
+}
 
-impl Component for Body {
+impl<T: Component> Component for Body<T> {
     fn render(&self) -> String {
         let result = html!(
             <body class="has-navbar-fixed-top">
                 {Navbar::new().render()}
-                {Dashboard::new().render()}
+                {self.page.render()}
             </body>
         );
 
@@ -23,8 +27,8 @@ impl Component for Body {
     }
 }
 
-impl Body {
-    pub fn new() -> Self {
-        Body {}
+impl<T: Component> Body<T> {
+    pub fn new(page: PageFrame<T>) -> Self {
+        Body { page }
     }
 }
