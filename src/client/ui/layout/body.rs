@@ -4,6 +4,8 @@ use serde::{Deserialize, Serialize};
 
 use html_to_string_macro::html;
 
+//use crate::client::ui::pages::{LoginPage, PageFrame};
+use crate::client::ui::pages;
 use crate::client::ui::Layout::Navbar;
 use crate::client::ui::{Component, Dashboard};
 
@@ -16,6 +18,7 @@ impl Component for Body {
             <body class="has-navbar-fixed-top">
                 {Navbar::new().render()}
                 {Dashboard::new().render()}
+                {pages::PageFrame::new(pages::LoginPage::new()).render()}
             </body>
         );
 
